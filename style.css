@@ -161,6 +161,23 @@ a:hover {
 
 /* Bottone */
 
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #E84B27;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #db2a03;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -175,7 +192,6 @@ a:hover {
 
 .button:hover {
     background-color: #db2a03;
-    color: #fff;
 }
 
 #portfolio {
@@ -198,6 +214,10 @@ a:hover {
     border-style:  solid;
     border-width: 1px;
 }
+/*
+.card:hover {
+    cursor: url("./assets/css/js/img/pointer.svg"), auto;
+}*/
 
 .card:hover .arrow {
     transform: translate(30%, 0);
@@ -244,7 +264,6 @@ a:hover {
 /* ------------------------------ Colonne CV ------------------------------ */
 
 #about {
-    background-color: #121212;
     padding: 50px 0 0 0;
     text-align: center;
 }
@@ -353,6 +372,63 @@ footer {
 
 .white {
     color: #fff;
+}
+
+/* ------------------------------ PAGINA CONTATTI ------------------------------ */
+
+#contact {
+    padding: 100px 0 100px 0;
+}
+
+.contact-img {
+    border-radius: 15px;
+    border: solid 1px #fff;
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    margin: 0 0 24px 0;
+}
+
+.info-container {
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 24px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    margin-bottom: 4px;
+}
+
+/* ------------------------------ Form ------------------------------ */
+
+form {
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 24px;
+    background-color: #555555;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    /*width: 100%;*/
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* ------------------------------ RESPOSIVE ------------------------------ */

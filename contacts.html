@@ -1,8 +1,109 @@
-<html>
-    <head>
-        <title>Gabriele Persola - Contatti</title>
-    </head>
-    <body>
-        <h1>Contatti</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriele Persola | Contatti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/css/js/img/Favicon GP.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="logo-link">
+                <a href="./index.html">Gabriele Persola</a>
+            </li>
+            <li class="center-links">
+                <a class="space" href="./index.html#portfolio">Portfolio</a>
+                <a class="space" href="./index.html#about">Chi sono</a>
+                <a class="space" href="./contacts.html">Contatti</a>
+            </li>
+            <li class="social-links">
+                <a href="https://www.instagram.com/_g_a_b_r_y_/"><img src="./assets/css/js/img/Instagram - Negative.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/gabrielepersola/"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
+                <a href="https://www.behance.net/gabrielepersola1"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
+            </li>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-container">
+        <div class="title">
+            <h1 class="h1">Contatti</h1>
+        </div>
+    </div>
+</section>
+
+<div class="orizontal-line-white"></div>
+
+<section id="contact">
+    <div class="container">
+        <div class="container-column">
+            <div class="column column-left">
+                <div class="img-container">
+                    <img src="./assets/css/js/img/Gabri-HD.jpg" class="contact-img">
+                </div>
+                <div class="info-container">
+                    <h4 class="h4 title">Email</h4>
+                    <a class="p" href="mailto:gabrielepersola@gmail.com?subject=Richiesta di informazioni&body=Ciao, vorrei chiederti maggiori informazioni riguardo al tuo lavoro.">gabrielepersola@gmail.com</a>
+                    <h4 class="h4 contact-info">Cellulare</h4>
+                    <a href="+39 393 0000 000" class="p">393 0000 000</a>
+                    <h4 class="h4 contact-info">LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/gabrielepersola/" class="p">Gabriele Persola</a>
+                </div>
+            </div>
+            <div class="column column-right">
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome *</label>
+                        <input type="text" placeholder="Nome" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognome">Cognome *</label>
+                        <input type="text" placeholder="Cognome" id="cognome" name="cognome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" placeholder="Scrivi qui il tuo messaggio..." name="messaggio"></textarea>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="orizontal-line-white"></div>
+
+<footer>
+    <div class="footer-container">
+        <div class="left">
+            <a class="h4 white" href="./contacts.html">Contattami</a>
+            <svg class="arrow arrow-footer" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg>
+        </div>
+        <div class="right">
+            <p class="p white">© Copyright 2024</p>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
