@@ -31,7 +31,7 @@
                 <a href="https://www.linkedin.com/in/gabrielepersola/"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
                 <a href="https://www.behance.net/gabrielepersola1"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
             </li>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -40,7 +40,7 @@
     </nav>
 </header>
 
-<section id="hero">
+<section id="hero" class="mobile">
     <div class="hero-container">
         <div class="title">
             <h1 class="h1">Contatti</h1>
@@ -50,7 +50,7 @@
 
 <div class="orizontal-line-white"></div>
 
-<section id="contact">
+<section id="contact" class="space">
     <div class="container">
         <div class="column-left">
                     <img src="./assets/css/js/img/Gabri-HD.jpg" class="contact-img">
@@ -85,14 +85,16 @@
 <footer>
     <div class="footer-container">
         <div class="left">
-            <a class="h4 white" href="./contacts.html">Contattami</a>
+            <a class="h4" href="./contacts.html">Contattami</a>
             <svg class="arrow arrow-footer" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg>
         </div>
         <div class="right">
-            <p class="p white">© Copyright 2024</p>
+            <p class="p">© Copyright 2024</p>
         </div>
     </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

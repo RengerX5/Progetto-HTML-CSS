@@ -93,24 +93,11 @@ a:hover {
     cursor: pointer;
 }
 
-.bar {
+.hamburger-menu .bar {
     width: 25px;
     height: 3px;
     background-color: #E84B27;
     margin: 5px 0;
-}
-
-/* Stili per la classe aggiunta quando il menu ad hamburger è aperto */
-.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* ------------------------------ Tipografia ------------------------------ */
@@ -120,7 +107,7 @@ a:hover {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 60px;
+  font-size: 4vw;
   color: #fff;
   text-align: center;
 }
@@ -333,7 +320,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 24px;
+    margin: 24px -10px 0 -10px;
 }
 
 .icon-name {
@@ -388,10 +375,6 @@ footer {
 
 .right {
     text-align: right;
-}
-
-.white {
-    color: #fff;
 }
 
 /* ------------------------------ PAGINA CONTATTI ------------------------------ */
@@ -491,20 +474,96 @@ textarea {
     min-height: 64px;
 }
 
-
 /* ------------------------------ RESPOSIVE ------------------------------ */
 
 /* ------------------------------ TABLET ------------------------------ */
-/*@media only screen and (max-width: 1200px) {
+@media (min-width: 576px) and (max-width: 992px) {
+    /*MENU*/
+    .menu li.social-links, .menu li.center-links {
+        display: none;
+    }
 
-}*/
+    .hamburger-menu {
+        display: block;
+    }
+/*
+    .menu {
+        flex-direction: column;
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }*/
 
+    .menu.active {
+        display: flex;
+    }
 
-@media only screen and (max-width: 576px) {
+    /* Stili per mostrare il menu a tendina quando è aperto */
+    .open .menu {
+        display: block;
+    }
 
-    .card-grid{
+    .center-links, .social-links {
+        text-align: center;
+    }
+
+    /*TIPOGRAFIA*/
+    .h1 {
+        font-size: 40px;
+        text-wrap: balance;
+    }
+
+    .h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    /*CONTAINER e SEZIONI*/
+    .hero-container {
+        width: 100%;
+        text-wrap: balance;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    /*PAGINA CONTATTI*/
+    #hero.mobile {
+        padding: 80px 0 40px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-left, .column-right {
         width: 100%;
     }
+
+    /*SEZIONE PORFOLIO*/
+    .container-column {
+        width: 100%; /* Imposta la larghezza delle colonne al 100% su dispositivi mobili */
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    /*CARD PORFOLIO*/
+    .card-grid {
+        flex-direction: column; /* Impila le card verticalmente su schermi più piccoli */
+        align-items: center; /* Centra le card verticalmente */
+    }
+}
+
+
+/* ------------------------------ MOBILE ------------------------------ */
+
+@media only screen and (max-width: 575px) {
 
     .footer-container {
         flex-direction: column;
@@ -514,10 +573,7 @@ textarea {
     .left, .right {
         text-align: center;
     }
-}
 
-/* ------------------------------ MOBILE ------------------------------ */
-@media only screen and (max-width: 768px) {
     /*MENU*/
     .menu li.social-links, .menu li.center-links {
         display: none;
@@ -543,6 +599,7 @@ textarea {
 
     .h2 {
         font-size: 32px;
+        margin-bottom: 16px;
     }
 
     /*CONTAINER e SEZIONI*/
@@ -552,6 +609,14 @@ textarea {
 
     #portfolio {
         padding: 50px 0;
+    }
+
+    #hero.mobile {
+        padding: 80px 0 40px 0;
+    }
+
+    #contact.space{
+        padding: 50px 0 100px 0;
     }
 
     /*PAGINA CONTATTI*/
@@ -575,8 +640,20 @@ textarea {
 
     /*CARD PORFOLIO*/
     .card-grid {
+        width: 100%;
         flex-direction: column; /* Impila le card verticalmente su schermi più piccoli */
         align-items: center; /* Centra le card verticalmente */
+    }
+
+    .right .p{
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 383px) {
+    .icon-container {
+        margin: 24px -12px 0 -12px;
     }
 
 }
