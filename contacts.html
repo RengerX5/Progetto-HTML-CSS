@@ -21,6 +21,11 @@
             <li class="logo-link">
                 <a href="./index.html">Gabriele Persola</a>
             </li>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <li class="center-links">
                 <a class="space" href="./index.html#portfolio">Portfolio</a>
                 <a class="space" href="./index.html#about">Chi sono</a>
@@ -31,11 +36,6 @@
                 <a href="https://www.linkedin.com/in/gabrielepersola/"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
                 <a href="https://www.behance.net/gabrielepersola1"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
             </li>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
         </ul>
     </nav>
 </header>
@@ -51,31 +51,37 @@
 <div class="orizontal-line-white"></div>
 
 <section id="contact" class="space">
-    <div class="container">
-        <div class="column-left">
-                    <img src="./assets/css/js/img/Gabri-HD.jpg" class="contact-img">
-        </div>
-        <div class="column-right">
-            <h2 class="h2">Compila il form con i tuoi dati per iniziare una conversazione.</h2>
-            <form>
-                <div class="form-group">
-                    <label for="nome" class="h4">Nome *</label>
-                    <input type="text" placeholder="Nome" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="cognome" class="h4">Cognome *</label>
-                    <input type="text" placeholder="Cognome" id="cognome" name="cognome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="h4">Email *</label>
-                    <input type="email" placeholder="Email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="messaggio" class="h4">Messaggio</label>
-                    <textarea id="messaggio" placeholder="Scrivi qui il tuo messaggio..." name="messaggio"></textarea>
-                </div>
-                <button type="submit">Invia</button>
-            </form>
+    <h2 class="h2 contactSize">Compila il form con i tuoi dati per iniziare una conversazione.</h2>
+    <div class="containerForm">
+        <div class="containerGroup">
+            <div class="column-left altezzaIMG">
+                <img src="./assets/css/js/img/Gabri-HD.jpg" class="contact-img">
+            </div>
+
+            <div class="column-right">
+                <form>
+                    <div class="form-group">
+                        <label for="nome" class="h4">Nome *</label>
+                        <input type="text" placeholder="Nome" id="nome" name="nome" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="cognome" class="h4">Cognome *</label>
+                        <input type="text" placeholder="Cognome" id="cognome" name="cognome" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="h4">Email *</label>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio" class="h4">Messaggio</label>
+                        <textarea id="messaggio" placeholder="Scrivi qui il tuo messaggio..." name="messaggio"></textarea>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -100,10 +106,10 @@
 </html>
 
 <!-- <div class="info-container">
-                    <h4 class="h4 title">Email</h4>
-                    <a class="p" href="mailto:gabrielepersola@gmail.com?subject=Richiesta di informazioni&body=Ciao, vorrei chiederti maggiori informazioni riguardo al tuo lavoro.">gabrielepersola@gmail.com</a>
-                    <h4 class="h4 contact-info">Cellulare</h4>
-                    <a href="+39 393 0000 000" class="p">393 0000 000</a>
-                    <h4 class="h4 contact-info">LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/gabrielepersola/" class="p">Gabriele Persola</a>
-                </div> -->
+    <h4 class="h4 title">Email</h4>
+    <a class="p" href="mailto:gabrielepersola@gmail.com?subject=Richiesta di informazioni&body=Ciao, vorrei chiederti maggiori informazioni riguardo al tuo lavoro.">gabrielepersola@gmail.com</a>
+    <h4 class="h4 contact-info">Cellulare</h4>
+    <a href="+39 393 0000 000" class="p">393 0000 000</a>
+    <h4 class="h4 contact-info">LinkedIn</h4>
+   <a href="https://www.linkedin.com/in/gabrielepersola/" class="p">Gabriele Persola</a>
+</div> -->
