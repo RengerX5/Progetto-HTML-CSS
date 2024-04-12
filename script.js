@@ -1,14 +1,11 @@
-function toggleMenu() {
-    var menu = document.getElementById("hm");
-    menu.classList.toggle("active");
+/* MENU */
+
+function myFunction() {
+    const toggle_btn = document.getElementById('mob');
+    toggle_btn.classList.toggle('active');
 }
 
-/*
-function toggleMenu() {
-    var menu = document.querySelector(".hamburger-menu");
-    menu.classList.toggle("active");
-}
-*/
+
 
 
 /* FORM */

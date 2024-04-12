@@ -1,3 +1,9 @@
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
 html {
     scroll-behavior: smooth; /* Abilita lo scorrimento fluido per tutta la pagina */
     background-color: #121212;
@@ -8,15 +14,18 @@ html {
 header {
     background-color: #121212;
     color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     margin: auto;
     position: fixed;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
     width: 80%;
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0.2% auto;
+    padding: 20px;
     border: solid 1px #E84B27;
+    border-radius: 5px;
 }
 
 .menu {
@@ -37,6 +46,9 @@ header {
     text-align: center;
     text-decoration: none; /* Rimuove la linea sotto i link */
     font-family: "Inter";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .menu li.center-links a.space{
@@ -57,6 +69,12 @@ header {
     height: 20px;
 }
 
+/* HAMBURGER MENU */
+
+.HamburgerMenu{
+    display: none;
+}
+
 .logo-link {
     font-family: "Playfair Display", serif;
     font-weight: 700;
@@ -66,12 +84,12 @@ header {
 
 #hero {
     background-color: #121212;
-    padding: 100px 0;
+    padding: 150px 0 100px 0;
     text-align: center;
 }
 
 .hero-container {
-    width: 60%;
+    width: 77%;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -88,12 +106,12 @@ a:hover {
 
 /* ------------------------------ Menù MOBILE ------------------------------ */
 
-.hamburger-menu {
+.hamburger {
     display: none;
     cursor: pointer;
 }
 
-.hamburger-menu .bar {
+.hamburger .bar {
     width: 25px;
     height: 3px;
     background-color: #E84B27;
@@ -148,8 +166,13 @@ a:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
+  line-height: 24px;
+}
+
+.p li{
+    margin-left: 18px;
 }
 
 /* ------------------------------ Sezioni e Container ------------------------------ */
@@ -175,14 +198,15 @@ button:hover {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 32px;
     background-color: #E84B27;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-family: "Inter";
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
+    margin-top: 80px;
 }
 
 .button:hover {
@@ -210,10 +234,10 @@ button:hover {
     border-style:  solid;
     border-width: 1px;
 }
-/*
+
 .card:hover {
-    cursor: url("./assets/css/js/img/pointer.svg"), auto;
-}*/
+    cursor: url("./assets/css/js/img/IconPointer.svg"), auto;
+}
 
 .card:hover .arrow {
     transform: translate(30%, 0);
@@ -321,7 +345,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 24px -10px 0 -10px;
+    margin: 24px -1px 0 -1px;
 }
 
 .icon-name {
@@ -348,7 +372,8 @@ button:hover {
 /*luogo di lavoro e data sotto il ruolo*/
 
 .margin {
-    margin-top: 0%;
+    margin-top: 3px;
+    margin-bottom: 16px;
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
@@ -506,6 +531,10 @@ textarea {
     min-height: 64px;
 }
 
+.form-group span{
+    color: red;
+}
+
 /* ------------------------------ RESPOSIVE ------------------------------ */
 
 /* ------------------------------ TABLET ------------------------------ */
@@ -515,18 +544,9 @@ textarea {
         display: none;
     }
 
-    .hamburger-menu {
+    .hamburger {
         display: block;
     }
-/*
-    .menu {
-        flex-direction: column;
-        background-color: red;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-    }*/
 
     .menu.active {
         display: flex;
@@ -543,7 +563,7 @@ textarea {
 
     /*TIPOGRAFIA*/
     .h1 {
-        font-size: 40px;
+        font-size: 48px;
         text-wrap: balance;
     }
 
@@ -551,6 +571,16 @@ textarea {
         font-size: 32px;
         margin-bottom: 16px;
         width: 80%;
+    }
+
+    .p{
+        font-size: 16px;
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 10px 24px;
+        font-size: 20px;
     }
 
     /*CONTAINER e SEZIONI*/
@@ -569,7 +599,7 @@ textarea {
     }
 
     #hero.mobile {
-        padding: 80px 0 40px 0;
+        padding: 120px 0 80px 0;
     }
 
     .container {
@@ -610,6 +640,16 @@ textarea {
     .altezzaIMG {
         margin-bottom: 48px;
         margin-top: 24px;
+        text-align: center;
+    }
+
+    .altezzaIMG img {
+        height: auto;
+        width: 100%;
+    }
+
+    .containerGroup .column-left {
+        height: auto;
     }
 }
 
@@ -618,9 +658,20 @@ textarea {
 
 @media only screen and (max-width: 575px) {
 
+    header{
+        border-bottom: 1px solid #E84B27;
+    }
+
+    header nav{
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
+        gap: 4px;
     }
 
     .left, .right {
@@ -632,7 +683,7 @@ textarea {
         display: none;
     }
 
-    .hamburger-menu {
+    .hamburger {
         display: block;
     }
 
@@ -655,6 +706,16 @@ textarea {
         margin-bottom: 16px;
     }
 
+    .p{
+        font-size: 16px;
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 10px 24px;
+        font-size: 20px;
+    }
+
     .contactSize {
         font-size: 24px;
     }
@@ -669,7 +730,7 @@ textarea {
     }
 
     #hero.mobile {
-        padding: 80px 0 40px 0;
+        padding: 120px 0 80px 0;
     }
 
     #contact.space{
@@ -740,6 +801,52 @@ textarea {
     }
 
 }
+
+@media only screen and (max-width: 992px) {
+    .HamburgerMenu{
+        display: none;
+        background-color: #E84B27;
+        position: absolute;
+        top: 70px;
+        border-radius: 0 0 10px 10px ;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hamburger-link{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .hamburger-link a{
+        display: block;
+        padding-block: 8px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px; 
+        font-style: normal; 
+    }
+
+    ul.open {
+        margin-block: 65px;
+        margin-inline: 65px;
+    }
+
+    .hamburger-link img{
+        width: 32px;
+    }
+
+    .HamburgerMenu .hamburger-icon{
+        display: inline-block;
+        margin-right: 12px;
+        margin-top: 16px;
+    }
+
+    #mob.active{
+        display: inline-block;
+    }
+}
+
+
 
 /* GRIGLIA ICONE SKILLS */
 @media only screen and (max-width: 383px) {
