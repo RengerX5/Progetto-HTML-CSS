@@ -10,6 +10,18 @@ function closeHamburgerMenu() {
     toggle_btn.classList.remove('active');
 }
 
+/* INVIO EMAIL */
+function sendEmail(){
+    let params = {
+        nome : document.getElementById("nome").value,
+        cognome : document.getElementById("cognome").value,
+        email : document.getElementById("email").value,
+        messaggio : document.getElementById("messaggio").value
+    }
+
+    emailjs.send("service_tt5hea4","template_ri6wesq",params).then(alert("Email inviata"));
+}
+
 
 /* FORM */
 

@@ -488,12 +488,6 @@ label {
     display: block;
     margin: 0 0 4px 4px;
 }
-/*
-#nome, #cognome {
-    display: inline-block;
-    width: calc(50% - 5px);
-    margin-right: 10px;
-}*/
 
 input, textarea {
     width: 34vw;
