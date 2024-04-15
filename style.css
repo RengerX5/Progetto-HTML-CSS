@@ -1,7 +1,7 @@
 *,*::after, *::before{
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 html {
@@ -323,16 +323,16 @@ button:hover {
 
 .vertical-line {
     width: 1px;
-    background-color: #fff; /* Colore della linea */
+    background-color: #fff;
 }
 
 .orizontal-line {
-    border-top: 1px solid #E84B27; /* Colore e spessore della linea */
+    border-top: 1px solid #E84B27;
     width: 100%;
 }
 
 .orizontal-line-white {
-    border-top: 1px solid #fff; /* Colore e spessore della linea */
+    border-top: 1px solid #fff;
     width: 100%;
 }
 
@@ -528,7 +528,7 @@ input:hover {
 
 textarea {
     resize: vertical;
-    min-height: 64px;
+    min-height: 84px;
 }
 
 .form-group span{
@@ -599,7 +599,7 @@ textarea {
     }
 
     #hero.mobile {
-        padding: 120px 0 80px 0;
+        padding: 120px 0 60px 0;
     }
 
     .container {
@@ -628,7 +628,7 @@ textarea {
 
     /*FORM CONTATTI*/
     input, textarea {
-        width: 96%;
+        width: 100%;
     }
 
     .containerGroup{
@@ -663,7 +663,7 @@ textarea {
     }
 
     header nav{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         border: none;
     }
@@ -730,7 +730,7 @@ textarea {
     }
 
     #hero.mobile {
-        padding: 120px 0 80px 0;
+        padding: 120px 0 60px 0;
     }
 
     #contact.space{
@@ -771,7 +771,7 @@ textarea {
 
     /*CONTATTI*/
     input, textarea {
-        width: 94%;
+        width: 100%;
     }
 
     .containerGroup{
@@ -802,6 +802,8 @@ textarea {
 
 }
 
+
+/* ------------------------------ MENU MOBILE ------------------------------ */
 @media only screen and (max-width: 992px) {
     .HamburgerMenu{
         display: none;
@@ -826,6 +828,10 @@ textarea {
         font-style: normal; 
     }
 
+    .hamburger-link a:active {
+        color: #121212;
+    }
+
     ul.open {
         margin-block: 65px;
         margin-inline: 65px;
@@ -844,6 +850,10 @@ textarea {
     #mob.active{
         display: inline-block;
     }
+
+    .a:hover{
+        color: #121212;
+    }
 }
 
 
@@ -852,12 +862,5 @@ textarea {
 @media only screen and (max-width: 383px) {
     .icon-container {
         margin: 24px -12px 0 -12px;
-    }
-}
-
-/* CASELLE INPUT FORM */
-@media only screen and (max-width: 425px) {
-    input, textarea {
-        width: 91%;
     }
 }

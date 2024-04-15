@@ -21,23 +21,38 @@
             <li class="logo-link">
                 <a href="./index.html">Gabriele Persola</a>
             </li>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
             <li class="center-links">
                 <a class="space" href="./index.html#portfolio">Portfolio</a>
                 <a class="space" href="./index.html#about">Chi sono</a>
                 <a class="space" href="./contacts.html">Contatti</a>
             </li>
             <li class="social-links">
-                <a href="https://www.instagram.com/_g_a_b_r_y_/"><img src="./assets/css/js/img/Instagram - Negative.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/gabrielepersola/"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
-                <a href="https://www.behance.net/gabrielepersola1"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
+                <a href="https://www.instagram.com/_g_a_b_r_y_/" target="_blank"><img src="./assets/css/js/img/Instagram - Negative.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/gabrielepersola/" target="_blank"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
+                <a href="https://www.behance.net/gabrielepersola1" target="_blank"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
             </li>
+            <div id="hm" class="hamburger" onclick="myFunction()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </ul>
         </ul>
     </nav>
+    <div class="HamburgerMenu" id="mob">
+        <nav>
+            <ul class="open">
+                <li class="hamburger-link">
+                    <a class="space" href="./index.html#portfolio" onclick="closeHamburgerMenu()">Portfolio</a>
+                    <a class="space" href="./index.html#about" onclick="closeHamburgerMenu()">Chi sono</a>
+                    <a class="space" href="./contacts.html" onclick="closeHamburgerMenu()">Contatti</a>
+                    <a href="https://www.instagram.com/_g_a_b_r_y_/" class="hamburger-icon" target="_blank" onclick="closeHamburgerMenu()"><img src="./assets/css/js/img/Instagram - Negative.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/gabrielepersola/" class="hamburger-icon" target="_blank" onclick="closeHamburgerMenu()"><img src="./assets/css/js/img/LinkedIn - Negative.png" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/gabrielepersola1" class="hamburger-icon" target="_blank" onclick="closeHamburgerMenu()"><img src="./assets/css/js/img/Behance.png" alt="Behance"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <section id="hero" class="mobile">

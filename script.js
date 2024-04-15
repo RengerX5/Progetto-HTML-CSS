@@ -5,7 +5,10 @@ function myFunction() {
     toggle_btn.classList.toggle('active');
 }
 
-
+function closeHamburgerMenu() {
+    const toggle_btn = document.getElementById('mob');
+    toggle_btn.classList.remove('active');
+}
 
 
 /* FORM */
