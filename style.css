@@ -1,0 +1,860 @@
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Abilita lo scorrimento fluido per tutta la pagina */
+    background-color: #121212;
+}
+
+/* ------------------------------ Menù ------------------------------ */
+
+header {
+    background-color: #121212;
+    color: #fff;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    width: 80%;
+    margin: 0.2% auto;
+    padding: 20px;
+    border: solid 1px #E84B27;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li.center-links {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none; /* Rimuove la linea sotto i link */
+    font-family: "Inter";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menu li.center-links a.space{
+    padding: 0 8px 0 8px;
+}
+
+.menu li.social-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li.social-links a {
+    margin-left: 10px;
+}
+
+.menu li.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+/* HAMBURGER MENU */
+
+.HamburgerMenu{
+    display: none;
+}
+
+.logo-link {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#hero {
+    background-color: #121212;
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+
+.hero-container {
+    width: 77%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------ Link ------------------------------ */
+a {
+    text-decoration: none; /* Rimuove la linea sotto i link */
+    color: inherit; /* Assicura che il colore del testo rimanga invariato */
+}
+
+a:hover {
+    color: #E84B27;
+}
+
+/* ------------------------------ Menù MOBILE ------------------------------ */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #E84B27;
+    margin: 5px 0;
+}
+
+/* ------------------------------ Tipografia ------------------------------ */
+
+.h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin: 32px 0 64px 0;
+  width: 80%;
+}
+
+.h3 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 4px 0;
+}
+
+.h4 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+.p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.p li{
+    margin-left: 18px;
+}
+
+/* ------------------------------ Sezioni e Container ------------------------------ */
+
+/* Bottone */
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #E84B27;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #db2a03;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #E84B27;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.button:hover {
+    background-color: #db2a03;
+    color: #fff;
+}
+
+#portfolio {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------------------------ Card Portfolio ------------------------------ */
+
+.card {
+    display: inline-block;
+    margin: 20px;
+    background-color: #121212;
+    border-radius: 15px;
+    border-color: #fff;
+    box-sizing: border-box;
+    border-style:  solid;
+    border-width: 1px;
+}
+
+.card:hover {
+    cursor: url("./assets/css/js/img/IconPointer.svg"), auto;
+}
+
+.card:hover .arrow {
+    transform: translate(30%, 0);
+}
+
+.card-grid {
+    width: 80%;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 12px 12px 0 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px 16px 24px;
+}
+
+.content h3 {
+    margin: 0;
+}
+
+.arrow {
+    fill: #E84B27;
+    width: 38px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.arrow-footer {
+    margin-left: 8px;
+    width: 30px;
+    height: auto;
+}
+
+.arrow-footer:hover {
+    transform: translate(30%, 0);
+}
+
+/* ------------------------------ Colonne CV ------------------------------ */
+
+#about {
+    padding: 50px 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center;
+    flex-direction: column;
+}
+
+.column-left {
+    flex: 1;
+    padding: 24px;
+}
+
+.column-right {
+    flex: 1;
+    padding: 24px;
+}
+
+.column-left, .column-right.txt{
+    text-align: left;
+  }
+
+.container-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 0 0 56px 0;
+    text-align: left;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #fff;
+}
+
+.orizontal-line {
+    border-top: 1px solid #E84B27;
+    width: 100%;
+}
+
+.orizontal-line-white {
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap; /* Per far andare a capo le icone quando lo spazio non è sufficiente */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px -1px 0 -1px;
+}
+
+.icon-name {
+    margin-top: 5px;
+}
+
+.icon {
+    width: 50%;
+    height: auto;
+}
+
+/* ------------------------------ Modifiche al testo della sezione CV ------------------------------ */
+
+.subtitle {
+   color: #E84B27;
+   margin-top: 24px;
+   margin-bottom: 4px;
+}
+
+.paragraph-margin {
+    margin-top: 24px;
+}
+
+/*luogo di lavoro e data sotto il ruolo*/
+
+.margin {
+    margin-top: 3px;
+    margin-bottom: 16px;
+}
+
+/* ------------------------------ FOOTER ------------------------------ */
+
+footer {
+    background-color: #121212;
+    /*color: #fff;*/
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* ------------------------------ PAGINA CONTATTI ------------------------------ */
+
+#contact {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-img {
+    border-radius: 15px;
+    border: solid 1px #fff;
+}
+
+.img-container {
+    margin: 0 0 24px 0;
+}
+
+.info-container {
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 24px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    margin-bottom: 4px;
+}
+
+/* ------------------------------ Form ------------------------------ */
+
+.container{
+    display: flex;
+    width: 80%;
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.containerGroup{
+    display: flex;
+    gap: 3rem;
+    width: 80%;
+    justify-content: center;
+}
+
+.containerGroup .column-left {
+    padding: 0;
+    flex: 0;
+    height: 32.5rem;
+}
+
+.containerGroup .column-right {
+    padding: 0;
+    flex: 0;
+}
+
+.altezzaIMG img{
+    height: 100%;
+    width: auto;
+}
+
+form {
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 24px;
+    background-color: #121212;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin: 0 0 4px 4px;
+}
+
+input, textarea {
+    width: 34vw;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px; 
+    font-style: normal; 
+    color: #121212;
+}
+
+textarea:hover {
+    border: 2px solid #E84B27;
+}
+
+input:hover {
+    border: 2px solid #E84B27;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 14px; 
+    font-style: normal; 
+    color: #121212;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 84px;
+}
+
+.form-group span{
+    color: red;
+}
+
+/* ------------------------------ RESPOSIVE ------------------------------ */
+
+/* ------------------------------ TABLET ------------------------------ */
+@media (min-width: 576px) and (max-width: 992px) {
+    /*MENU*/
+    .menu li.social-links, .menu li.center-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    /* Stili per mostrare il menu a tendina quando è aperto */
+    .open .menu {
+        display: block;
+    }
+
+    .center-links, .social-links {
+        text-align: center;
+    }
+
+    /*TIPOGRAFIA*/
+    .h1 {
+        font-size: 48px;
+        text-wrap: balance;
+    }
+
+    .h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        width: 80%;
+    }
+
+    .p{
+        font-size: 16px;
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 10px 24px;
+        font-size: 20px;
+    }
+
+    /*CONTAINER e SEZIONI*/
+    .hero-container {
+        width: 100%;
+        text-wrap: balance;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    /*PAGINA CONTATTI*/
+    #contact.space{
+        padding: 50px 0 100px 0;
+    }
+
+    #hero.mobile {
+        padding: 120px 0 60px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+    }
+
+    /*SEZIONE PORFOLIO*/
+    .container-column {
+        width: 100%; /* Imposta la larghezza delle colonne al 100% su dispositivi mobili */
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    /*CARD PORFOLIO*/
+    .card-grid {
+        flex-direction: column; /* Impila le card verticalmente su schermi più piccoli */
+        align-items: center; /* Centra le card verticalmente */
+    }
+
+    /*FORM CONTATTI*/
+    input, textarea {
+        width: 100%;
+    }
+
+    .containerGroup{
+        flex-direction: column;
+        width: 100%;
+        display: block;
+    }
+
+    .altezzaIMG {
+        margin-bottom: 48px;
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .altezzaIMG img {
+        height: auto;
+        width: 100%;
+    }
+
+    .containerGroup .column-left {
+        height: auto;
+    }
+}
+
+
+/* ------------------------------ MOBILE ------------------------------ */
+
+@media only screen and (max-width: 575px) {
+
+    header{
+        border-bottom: 1px solid #E84B27;
+    }
+
+    header nav{
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .left, .right {
+        text-align: center;
+    }
+
+    /*MENU*/
+    .menu li.social-links, .menu li.center-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Stili per mostrare il menu a tendina quando è aperto */
+    .open .menu {
+        display: block;
+    }
+
+    .center-links, .social-links {
+        text-align: center;
+    }
+
+    /*TIPOGRAFIA*/
+    .h1 {
+        font-size: 40px;
+    }
+
+    .h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .p{
+        font-size: 16px;
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 10px 24px;
+        font-size: 20px;
+    }
+
+    .contactSize {
+        font-size: 24px;
+    }
+
+    /*CONTAINER e SEZIONI*/
+    .hero-container {
+        width: 100%;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    #hero.mobile {
+        padding: 120px 0 60px 0;
+    }
+
+    #contact.space{
+        padding: 50px 0 100px 0;
+        /*width: 80%;*/
+        text-wrap: balance;
+    }
+
+    /*PAGINA CONTATTI*/
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+    }
+
+    /*SEZIONE PORFOLIO*/
+    .container-column {
+        width: 100%; /* Imposta la larghezza delle colonne al 100% su dispositivi mobili */
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    /*CARD PORFOLIO*/
+    .card-grid {
+        width: 100%;
+        flex-direction: column; /* Impila le card verticalmente su schermi più piccoli */
+        align-items: center; /* Centra le card verticalmente */
+    }
+
+    .right .p{
+        margin-bottom: 0;
+    }
+
+    /*CONTATTI*/
+    input, textarea {
+        width: 100%;
+    }
+
+    .containerGroup{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .containerForm{
+        flex-direction: column;
+    }
+
+    .containerGroup .altezzaIMG{
+        /*margin-bottom: 48px;*/
+        width: 100%;
+    }
+
+    .altezzaIMG img {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .containerGroup .column-left {
+        height: auto;
+    }
+
+}
+
+
+/* ------------------------------ MENU MOBILE ------------------------------ */
+@media only screen and (max-width: 992px) {
+    .HamburgerMenu{
+        display: none;
+        background-color: #E84B27;
+        position: absolute;
+        top: 70px;
+        border-radius: 0 0 10px 10px ;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hamburger-link{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .hamburger-link a{
+        display: block;
+        padding-block: 8px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px; 
+        font-style: normal; 
+    }
+
+    .hamburger-link a:active {
+        color: #121212;
+    }
+
+    ul.open {
+        margin-block: 65px;
+        margin-inline: 65px;
+    }
+
+    .hamburger-link img{
+        width: 32px;
+    }
+
+    .HamburgerMenu .hamburger-icon{
+        display: inline-block;
+        margin-right: 12px;
+        margin-top: 16px;
+    }
+
+    #mob.active{
+        display: inline-block;
+    }
+
+    .a:hover{
+        color: #121212;
+    }
+}
+
+
+
+/* GRIGLIA ICONE SKILLS */
+@media only screen and (max-width: 383px) {
+    .icon-container {
+        margin: 24px -12px 0 -12px;
+    }
+}
