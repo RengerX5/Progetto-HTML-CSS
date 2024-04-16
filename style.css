@@ -571,6 +571,10 @@ textarea {
         font-size: 16px;
     }
 
+    a:hover {
+        color: #121212;
+    }
+
     .button {
         margin-top: 40px;
         padding: 10px 24px;
@@ -702,6 +706,10 @@ textarea {
 
     .p{
         font-size: 16px;
+    }
+
+    a:hover {
+        color: #121212;
     }
 
     .button {
