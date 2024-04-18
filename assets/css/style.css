@@ -236,7 +236,7 @@ button:hover {
 }
 
 .card:hover {
-    cursor: url("./assets/css/js/img/IconPointer.svg"), auto;
+    cursor: url("../img/IconPointer.svg"), auto;
 }
 
 .card:hover .arrow {
@@ -511,6 +511,16 @@ input:hover {
 
 .error {
     border: 2px solid red;
+}
+
+#feedback, #feedback1, #feedback2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: red;
+    padding: 8px 0 0 8px;
 }
 
 ::placeholder {
